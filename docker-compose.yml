@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  api-web:
+    build: .
+    image: nameImageDocker:latest
+    container_name: nameContainer
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "8080:8080"
+    network_mode: bridge
+    restart: always
+    command: npm start
+    

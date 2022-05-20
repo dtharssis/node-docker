@@ -1,0 +1,14 @@
+{
+    "name": "projectname",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Danilo Araújo <dtharssis@gmail.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "dotenv": "^16.0.0"
+    }
+  }
